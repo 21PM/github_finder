@@ -7,17 +7,19 @@
     height: 30rem;
     margin: auto;
     width: 60rem;
-    border: 1px solid rgb(111, 111, 227);
+    /* border: 1px solid rgb(111, 111, 227); */
     margin-top: 7rem;
 }
 #main_outer{
     height: 27.5rem;
-    border: 1px solid lightblue;
+    /* border: 1px solid lightblue; */
 }
 #search_div{
     width: 100%;
-    height: 3rem;
-    border: 1px solid red;
+    height: 15%;
+    /* border: 1px solid red; */
+    background-color: rgb(235, 235, 235);
+    border-radius: 0.5rem;
 }
 #search_div{
     text-align: center;
@@ -39,41 +41,51 @@
     cursor: pointer;
 }
 #main_inner_div{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     height: 82%;
     margin-top: 2rem;
     padding: 2rem;
+    background-color: rgb(235, 235, 235);
+    border-radius: 1rem;
 }
 #profile_div{
     height: 25%;
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
 }
 #image_div{
     width: 10%;
-    height: 100%;
-    border: 1px solid yellowgreen;
+    /* border: 1px solid yellowgreen; */
     border-radius: 50%;
+    overflow: hidden;
+    height: 100%;
+}
+#image_div img{
+
 }
 #username_div{
     width:87%;
     height: 100%;
     align-items: center;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     display: flex;
     justify-content: space-between;
+    line-height: 2rem;
+    margin: auto;
 }
 #all_details_div{
     height: 80%;
     width: 100%;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
 }
 #follower_div{
     height: 45%;
     width: 100%;
-    border: 1px solid rgb(86, 86, 10);
+    /* border: 1px solid rgb(86, 86, 10); */
+    background-color: white;
+    border-radius: 1rem;
     margin-top: 1rem;
     display: flex;
     justify-content: space-between;
@@ -84,13 +96,13 @@
 .follow{
     height: 70%;
     width: 10%;
-    border: 1px solid lawngreen;
+    /* border: 1px solid lawngreen; */
     line-height: 1.4rem;
 }
 #social_media_div{
     height: 30%;
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-top: 1rem;
     display: flex;
     justify-content: space-between;
@@ -103,4 +115,64 @@
 #twitter_div{
     line-height: 2rem;
     align-items: center;
+}
+a{
+    text-decoration: none;
+}
+@media (max-width :600px){
+
+    #top{
+        height: 10rem;
+        margin: auto;
+        width: 30rem;
+        /* border: 1px solid rgb(111, 111, 227); */
+        margin-top: 7rem;
+    }
+    #profile_div{
+        height: 25%;
+        width: 100%;
+      
+    }
+    #username_div{
+        width:87%;
+        height: 100%;
+        margin: auto;
+    }
+    #follower_div{
+        height: 45%;
+        width: 100%;
+        /* border: 1px solid rgb(86, 86, 10); */
+        background-color: white;
+        border-radius: 1rem;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+        padding: 1rem;
+    }
+}
+@media (max-width :320px){
+
+    #top{
+        height: 10rem;
+        margin: auto;
+        width: 25rem;
+        /* border: 1px solid rgb(111, 111, 227); */
+        margin-top: 7rem;
+    }
+    #follower_div{
+        height: 45%;
+        width: 100%;
+        /* border: 1px solid rgb(86, 86, 10); */
+        background-color: white;
+        border-radius: 1rem;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+        padding: 1rem;
+    }
+    
 }
