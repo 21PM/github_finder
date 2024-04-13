@@ -56,7 +56,7 @@ input_text.addEventListener('change',()=>{
         <div id="username_div">
             <div id="left_side">
                 <h5>Name : ${Name}</h5>
-                <a href="${profile_url}" target="_blank">${UserId}</a>
+                <span>Github Id : </span><a href="${profile_url}" target="_blank">${UserId}</a>
             </div>
             <div id="right_side">
                 <h5>Joined : ${formattedDate}</h5>
