@@ -18,7 +18,21 @@ input_text.addEventListener('change',()=>{
 
         // Fetching data from API & Storing it to a variable
 
-        let Image_url = data.avatar_url;
+        let Username = (data.login != null) ? data.login : " -- ";
+        let fetchedUserId = Username;
+
+        if(fetchedUserId != " -- "){
+        showData(data);
+        }else{
+            USerNotfound(data);
+        }
+        
+    }
+
+})
+
+function showData(data){
+    let Image_url = data.avatar_url;
 
 
         let Name = (data.name != null) ? data.name : " -- ";
@@ -105,11 +119,19 @@ input_text.addEventListener('change',()=>{
     </div>
 
         `
-
-
         Bottom_Div.appendChild(newDiv);
-    }
+}
 
+function USerNotfound(){
 
+    let div =  document.createElement("div");
 
-})
+    div.innerHTML = 
+    ` 
+    <div id="follower_div">
+        <h3>User Not Found</h3>
+    </div>
+    `
+    Bottom_Div.appendChild(div);
+
+}
